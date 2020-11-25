@@ -1,0 +1,268 @@
+
+body{
+    background-color: lavender;
+}
+
+nav{
+    background-color: gray;
+    text-decoration: none;
+    text-justify: auto;
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.box {
+    border-style: solid;
+    border-color: black; 
+    border-width: 1px; 
+    padding: 200px;
+    overflow: hidden;
+    height: 200px;
+    width: auto;
+    background-color: lightblue;
+}
+
+#ground{
+    background-color: rgb(150, 89, 89);
+    position: relative;
+    height: 10px;
+    width: 1520px;
+    bottom: 178px;
+    right: 200px;
+
+}
+
+#player{
+    position: relative;
+    background-color: green;
+    height: 50px;
+    width: 50px;
+    top: 342px;
+    right: 100px;
+    overflow:hidden;
+}
+
+.jump{
+    animation: jump 500ms ;
+    
+}
+
+
+
+#enemy{
+    background-color: darkred;
+    height: 45px;
+    width: 40px;
+    position: relative;
+    left: 1500px;
+    top: 297px;
+     animation: enemy 4s infinite ; 
+     overflow: hidden;
+}
+
+#enemy2{
+    background-color: darkred;
+    height: 15px;
+    width: 42px;
+    position: relative;
+    left: 1300px;
+    top: 170px;
+    animation: enemy2 3s infinite linear;
+    overflow:hidden;
+}
+ 
+#enemy3{
+    background-color: darkred;
+    height: 45px;
+    width: 0px;
+    position: relative;
+    left: 1500px;
+    top: 237px;
+    animation: enemy 2s infinite linear; 
+}
+
+#enemy4{
+    background-color: darkred;
+    height: 45px;
+    width: 40px;
+    position: relative;
+    /* left: 2500px; */
+    /* top: 590px; */
+    top: 195px;
+    animation: enemy4 4s infinite linear ; 
+    overflow: hidden;
+}
+#seconds{
+    position: absolute;
+    bottom: 695px;
+    left: 11px;
+    /* display: inline-block; */
+}
+
+/* #triangle{
+    color: darkred;
+    border-top: 10px solid transparent;
+    border-right: 10px solid darkred;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+ 
+    position: absolute;
+    left: 1490px;
+    top: 489px;
+    animation: enemy2_triangle 3s infinite linear;
+
+} */
+
+#cloud1{
+    background-color: white;
+    border-radius: 500px 500px 0px 0px;
+
+    height: 30px;
+    width: 70px;
+    position: relative;
+    bottom: 250px;
+    animation: cloud1 24s infinite linear;
+
+}
+ 
+#cloud2{/*MIDDLE PIECE */
+    background-color: white;
+    border-radius: 500px;  
+
+    height: 50px;
+    width: 70px;
+    position: relative;
+    bottom: 300px;
+    left: 23px;
+    animation: cloud2 24s infinite linear;
+ 
+}
+#cloud3{
+    background-color: white;
+    border-radius: 500px 500px 0px 0px;
+
+    height: 30px;
+    width: 70px;
+    position: relative;
+    bottom: 330px;
+    left: 50px;
+    animation: cloud3 24s infinite linear;
+
+}
+
+
+#cloud4{
+    background-color: white;
+    border-radius: 500px 500px 0px 0px;
+
+    height: 30px;
+    width: 70px;
+    position: relative;
+    bottom: 300px;
+    animation: cloud4 25s infinite linear;
+}
+
+
+#cloud5{
+    background-color: white;
+    border-radius: 500px;  
+
+    height: 50px;
+    width: 70px;
+    position: relative;
+    bottom: 350px;
+    left: 23px;
+    animation: cloud5 25s infinite linear;
+}
+
+
+#cloud6{
+    background-color: white;
+    border-radius: 500px 500px 0px 0px;
+
+    height: 30px;
+    width: 70px;
+    position: relative;
+    bottom: 380px;
+    left: 50px;
+    animation: cloud6 25s infinite linear;
+}
+
+#sun{
+    background-color: yellow;
+    border-radius: 500px;
+    
+    height: 150px;
+    width: 150px;
+    position: relative;
+    bottom: 300px;
+    left: 1100px;
+
+
+}
+
+@keyframes cloud1{
+    0%{left: 1500px;}
+    100%{left: -820px;}
+}
+
+@keyframes cloud2{
+    0%{left: 1523px;}
+    100%{left: -797px;}
+}
+
+
+@keyframes cloud3{
+    0%{left: 1550px;}
+    100%{left: -770px;}
+}
+
+
+@keyframes cloud4{
+    0%{left: 700px;}
+    100%{left: -840px;}
+}
+
+@keyframes cloud5{
+    0%{left: 723px;}
+    100%{left: -817px;}
+}
+
+
+@keyframes cloud6{
+    0%{left: 750px;}
+    100%{left: -790px;}
+}
+
+
+
+@keyframes enemy{
+    0%{left: 1500px;}
+    100%{left: -820px;}
+}
+
+@keyframes enemy2{
+    0%{left: 1400px;}
+    100%{left: -820px;}
+}
+@keyframes enemy2_triangle{
+    0%{left: 1592px;}
+    100%{left: -628px;}
+}
+
+
+@keyframes enemy4{
+    0%{left: 2000px;}
+    100%{left: -820px;}
+}
+
+
+@keyframes jump{
+    0%{top: 342px;}
+    /* 30%{top: 100px;} */
+    50%{top: 75px;}
+    /* 80%{top: 100px;} */
+    /* 100%{top: 200px;} */
+
+}
